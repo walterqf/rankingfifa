@@ -43,6 +43,10 @@ rankingForm.addEventListener("submit", async (e) => {
     let result = "";
     let countryId1 = selectCountry.value;
     let countryId2 = selectCountry2.value;
+    let extraPoints1 = document.getElementById('extra1').value;
+    let extraPoints2 = document.getElementById('extra2').value;
+    let newValor = 0;
+    let newValor2 = 0;
     let countries = [countryId1, countryId2];
     let date = document.getElementById('date').value;
     let countriesValues =[];
@@ -57,15 +61,17 @@ rankingForm.addEventListener("submit", async (e) => {
             console.error("Error:", error);
         }
     }
+    newValor = parseInt(countriesValues[0]) + parseInt(extraPoints1);
+    newValor2 = parseInt(countriesValues[1]) + parseInt(extraPoints2);
 
-    if(countriesValues[0] > countriesValues[1]){
-        result = `El país ganador es ${selectCountry.options[selectCountry.selectedIndex].text}`;
+    if(newValor > newValor2){
+        result = `El país ganador es: ${selectCountry.options[selectCountry.selectedIndex].text}`;
     }else{
-        result = `El país ganador es ${selectCountry2.options[selectCountry2.selectedIndex].text}`;
+        result = `El país ganador es: ${selectCountry2.options[selectCountry2.selectedIndex].text}`;
 
     }
     Swal.fire({
-        title: `El resultado es el siguiente: ${result}`,
+        title: `${result}`,
         showClass: {
             popup: `
       animate__animated
