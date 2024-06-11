@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.min.css">
+    <title>Simulador de partidos</title>
+</head>
+<body>
+<div id="navbarContainer"></div>
+<h1 class="text-center">Simulador de partidos</h1>
+<div class="container">
+    <form id="rankingForm">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="selectCountry1">Seleccione el primer país:</label>
+                    <select id="selectCountry1" name="country1" class="form-select">
+                        <option value="">Seleccione un país</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="selectCountry2">Seleccione el segundo país:</label>
+                    <select id="selectCountry2" name="country2" class="form-select">
+                        <option value="">Seleccione un país</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="date">Fecha del partido:</label>
+                    <input type="date" id="date" name="date" class="form-control" required>
+                </div>
+            </div>
+        </div>
+        <br>
+        <input type="submit" value="Resultado" class="btn btn-primary">
+    </form>
+</div>
+<script src="./static/simulador.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

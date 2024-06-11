@@ -1,0 +1,8 @@
+Paso para poder ejecutar el proyecto:
+1. Descargar el proyecto
+2. Abrir el proyecto en el editor de código
+3. Cargar la base de datos que esta en el archivo `db.sql`
+4. En el proyecto ir a app.py y cambiar la configuración de la base de datos
+5. Abrir la terminal y ejecutar el comando pip install -r requirements.txt
+6. Asegurarse de que se este trabajando en el entorno virtual
+7. Ejecutar el comando python -m flask run

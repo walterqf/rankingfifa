@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.min.css">
+    <title>Football Rankings</title>
+</head>
+<body>
+<div id="navbarContainer"></div>
+
+<h1 class="text-center">Football Rankings</h1>
+
+<div class="d-flex justify-content-end">
+    <!-- Buscar por fecha de ranking -->
+    <label for="selectDate">Buscar por fecha de ranking:</label>
+    <select id="selectDate"></select> &nbsp;
+    <button class="btn btn-primary" id="btnSearch" type="button" onclick="searchData()">Buscar</button>
+</div>
+
+
+<br/>
+<table id="rankingTable" class="table table-hover">
+    <thead>
+    <tr class="table-active">
+        <th>Rank</th>
+        <th style="display: none;">País Id</th>
+        <th>País</th>
+        <th>País abrev</th>
+        <th>Puntos totales</th>
+        <th>Puntos anteriores</th>
+        <th>Cambio de ranking</th>
+        <th>Confederación</th>
+        <th>Fecha de ranking</th>
+        <th>Jugadores en la Plantilla</th>
+        <th>Jugadores extranjeros</th>
+        <th>Jugadores nacionales</th>
+        <th>Promedio de edad</th>
+        <th>Promedio de altura</th>
+        <th>Valor Total (M)</th>
+        <th>Economía</th>
+        <th>Clima</th>
+        <th>PIB (aprox.)</th>
+        <th>Índice de Democracia 2023</th>
+        <th>Plantilla</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+<script src="./static/main.js"></script>
+</body>
+</html>

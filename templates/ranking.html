@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.min.css">
+    <title>Modificar Ranking</title>
+</head>
+<body>
+<div id="navbarContainer"></div>
+<h1 class="text-center">Modificar Ranking</h1>
+<div class="container">
+    <form id="rankingForm">
+        <div id="countryPointsContainer">
+            <div class="row">
+                <label for="country">Selecciona el país:</label>
+                <div class="col-sm-10">
+                    <select id="selectCountry" name="countryId" class="selectCountry">
+                        <!-- Opciones de países aquí -->
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <label for="new_total_points">Ingresa el nuevo valor de puntos totales para el país
+                    seleccionado:</label>
+                <div class="col-sm-10">
+                    <input type="number" name="new_totalPoints" required><br><br>
+                </div>
+            </div>
+        </div>
+        <div id="fechaRankingContainer">
+            <div class="row">
+                <label for="fechaRanking">Selecciona la fecha del ranking:</label>
+                <div class="col-sm-10">
+                    <input type="date" id="fechaRanking" name="fechaRanking" required>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button type="button" id="addCountryButton" class="btn btn-success">Agregar otro país</button>
+        <input type="submit" value="Generar Ranking" class="btn btn-primary">
+    </form>
+</div>
+<script src="./static/ranking.js"></script>
+</body>
+</html>
